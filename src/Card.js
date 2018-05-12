@@ -19,7 +19,7 @@ export const Wrapper = styled.section`
   flex-direction: column-reverse;
   justify-content: space-between;
   ${props => props.secondary && css`
-    background-color:LIGHTSTEELBLUE;
+    background-color:sand;
   ` }
 `;
 
