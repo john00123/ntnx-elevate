@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import './App.css';
 import styled, {css} from 'styled-components';
 
 // Create a Wrapper component that'll render a <section> tag with some styles

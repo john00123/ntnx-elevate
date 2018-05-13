@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import './App.css';
 import styled, {css} from 'styled-components';
 
 const SideBarWrapper = styled.div`

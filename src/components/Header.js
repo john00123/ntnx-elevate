@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
-import './App.css';
 import styled, {css} from 'styled-components';
-import Nutanix from './Nutanix.svg'
-import user from './user.png'
+import Nutanix from '../img/Nutanix.svg'
+import user from '../img/user.png'
 
 const HeaderWrapper = styled.div`
   display: flex;
