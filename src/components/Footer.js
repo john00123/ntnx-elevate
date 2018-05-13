@@ -15,7 +15,7 @@ const FooterWrapper = styled.div`
   align-items: center;
   flex-direction: row;
   transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
-  @media (max-width: 700px) {
+  @media (max-width: 600px) {
     transform: translateX(0px);
   }
 

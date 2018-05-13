@@ -9,7 +9,7 @@ const SideBarWrapper = styled.div`
   box-sizing: border-box;
   color:#627386;
   transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
-  @media (max-width: 700px) {
+  @media (max-width: 600px) {
     transform: translateX(-150px);
     width: 0;
     padding: 20px 0;
