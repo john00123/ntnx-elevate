@@ -6,6 +6,7 @@ import {Card} from './components/Card.js'
 import {SideBar} from './components/Sidebar.js'
 import {PageLayout}from './components/PageLayout.js'
 import {Deck}from './components/Deck.js'
+import Footer from './components/Footer.js'
 
 
 class App extends Component {
@@ -23,6 +24,7 @@ class App extends Component {
             <Card name='Vanjie'/>
           </Deck>
         </PageLayout>
+        <Footer/>
 
       </div>
     );

@@ -7,18 +7,21 @@ const SideBarWrapper = styled.div`
   width: 200px;
   padding: 30px;
   box-sizing: border-box;
-  color:red;
+  color:#627386;
+  transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
   @media (max-width: 700px) {
-    display: none;
-    }
+    transform: translateX(-150px);
+    width: 0;
+    padding: 20px 0;
+  }
 `
 
 const Hr = styled.hr`
   border: none;
   height: 1px;
-  background-color: red;
+  background-color: #B8BFCA;
   ${props => props.secondary && css`
-    width:15px;
+    width:10px;
     margin-left:0;
   `}
 `
