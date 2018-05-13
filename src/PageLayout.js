@@ -4,7 +4,6 @@ import styled, {css} from 'styled-components';
 
 export const PageLayout = styled.div`
   display: flex;
-  padding: 30px 20px;
-  align-items: center;
+  align-items: flex-start;
   flex-direction: row;
 `

@@ -7,7 +7,11 @@ import {SideBar} from './Sidebar.js'
 import {PageLayout}from './PageLayout.js'
 import {Deck}from './Deck.js'
 
+
+
+
 class App extends Component {
+
   render() {
     return (
       <div>
@@ -15,10 +19,10 @@ class App extends Component {
         <PageLayout>
           <SideBar/>
           <Deck>
-            <Card secondary/>
-            <Card/>
-            <Card secondary/>
-            <Card/>
+            <Card name='this.state.name'/>
+            <Card name='Vanjie'/>
+            <Card name='Vanjie'/>
+            <Card name='Vanjie'/>
           </Deck>
         </PageLayout>
 

@@ -6,7 +6,6 @@ import styled, {css} from 'styled-components';
 
 export const Deck = styled.section`
   display: grid;
-  padding: 30px 20px;
   width: 100%;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   grid-gap:20px;

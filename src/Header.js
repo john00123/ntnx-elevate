@@ -6,7 +6,7 @@ import user from './user.png'
 
 const HeaderWrapper = styled.div`
   display: flex;
-  background-color:red;
+  background-color:white;
   padding: 0 20px;
   justify-content: space-between;
   height: 50px;
