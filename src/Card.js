@@ -25,7 +25,6 @@ export const Wrapper = styled.section`
 
 
 export class Card extends Component {
-
   render() {
     return (
       <Wrapper secondary>

@@ -1,12 +1,16 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
-import {Card, Title, Wrapper} from './Card.js'
+import HeaderPortal from './Header.js'
+import {Card} from './Card.js'
 
 class App extends Component {
   render() {
     return (
       <div>
+        <HeaderPortal>This dsd</HeaderPortal>
+
+
         <div className="App">
           <header className="App-header">
             <img src={logo} className="App-logo" alt="logo" />
