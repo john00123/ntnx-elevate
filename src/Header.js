@@ -14,21 +14,44 @@ const HeaderWrapper = styled.div`
   flex-direction: row;
 `
 
-const User =styled.img`
+const User = styled.img`
   height: 30px;
+`
+
+const Left =styled.div`
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  flex-grow: 1;
+  justify-content: flex-start;
+  > *{
+    margin-right: 10px;
+  }
+`
+
+const Right =styled.div`
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  flex-grow: 0;
+  justify-content: flex-end;
+  > *{
+    margin-left: 10px;
+  }
 `
 
 export default class HeaderPortal extends Component {
   render() {
     return (
       <HeaderWrapper>
-        <div className='leftSide'>
-          <img src={Nutanix} alt="logo" />
+        <Left>
+          <img src={Nutanix} alt="logo"/>
           <p>Elevate</p>
-        </div>
-        <div>
+        </Left>
+        <Right>
+          <p> Username </p>
           <User src={user}/>
-        </div>
+        </Right>
 
       </HeaderWrapper>
     );
