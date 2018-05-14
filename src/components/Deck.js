@@ -14,6 +14,6 @@ export const Deck = styled.section`
   grid-gap:20px;
 
   @media (max-width: 600px) {
-    padding: 30px 0 100px 0;
+    padding: 30px 20px 100px 20px;
   }
 `;

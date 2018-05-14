@@ -8,7 +8,7 @@ const Wrapper = styled.section`
   padding: 4em;
   background: white;
   border-radius: 4px;
-
+  height:100px; 
   display: flex;
   flex-direction: column;
   transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
@@ -31,14 +31,16 @@ export class Card extends Component {
   render() {
     return (
       <Wrapper secondary>
-        <h3>{this.props.name}</h3>
-        <hr/>
-        <Pstyled>A fair-market offer</Pstyled>
-        <Pstyled>No Showings</Pstyled>
-        <Pstyled>No double mortgage</Pstyled>
-        <Pstyled>Flexible close date</Pstyled>
-        <Pstyled>Zero days on market</Pstyled>
-        <Pstyled>No doing repairs yourself</Pstyled>
+      {
+        // <h3>{this.props.name}</h3>
+        // <hr/>
+        // <Pstyled>A fair-market offer</Pstyled>
+        // <Pstyled>No Showings</Pstyled>
+        // <Pstyled>No double mortgage</Pstyled>
+        // <Pstyled>Flexible close date</Pstyled>
+        // <Pstyled>Zero days on market</Pstyled>
+        // <Pstyled>No doing repairs yourself</Pstyled>
+      }
       </Wrapper>
     );
   }
