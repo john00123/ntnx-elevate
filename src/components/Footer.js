@@ -1,36 +1,54 @@
 import React, { Component } from 'react';
 import styled, {css} from 'styled-components';
+import * as c from './Colors.js'
+import Home from '../img/Icon/Home.svg'
+import Learn from '../img/Icon/Learn.svg'
+import Store from '../img/Icon/Store.svg'
+import Tool from '../img/Icon/Tool.svg'
+import Company from '../img/Icon/Company.svg'
 
 const FooterWrapper = styled.div`
   display: flex;
-  background-color:lavender;
+  background-color:${c.backgroundColor1};
+  color:${c.white}
   padding: 0 20px;
-  position: absolute;
+  box-sizing: border-box;
+  position: fixed;
   bottom: 0;
   width: 100%;
-  overflow-x: scroll;
+  overflow: none;
   justify-content: space-between;
   height: 60px;
   transform: translateY(70px);
   align-items: center;
   flex-direction: row;
   transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+
+  @media screen and (orientation: landscape) {
+    padding-left: env(safe-area-inset-left);
+    padding-right: env(safe-area-inset-right);
+  }
   @media (max-width: 600px) {
     transform: translateX(0px);
   }
+`
 
+const Img = styled.img`
+  display: inline-block;
+  height: 12px;
+  width: 12px;
+  margin-right: 10px;
 `
 
 export default class Footer extends Component {
   render() {
     return (
       <FooterWrapper>
-        <p>Home</p>
-        <p>Learn</p>
-        <p>Build</p>
-        <p>Something</p>
-        <p>Something</p>
-        <p>Something</p>
+        <Img src={Home}/><p>Home  </p>
+        <Img src={Learn}/><p>Learn  </p>
+        <Img src={Tool}/><p>Build  </p>
+        <Img src={Store}/><p>Market  </p>
+        <Img src={Company}/><p>Company</p>
       </FooterWrapper>
     );
   }

@@ -1,12 +1,14 @@
 import React, { Component } from 'react';
 import styled, {css} from 'styled-components';
+import * as c from './Colors.js';
 
 // Create a Wrapper component that'll render a <section> tag with some styles
 
-export const Wrapper = styled.section`
+const Wrapper = styled.section`
   padding: 4em;
   background: white;
   border-radius: 4px;
+
   display: flex;
   flex-direction: column;
   transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
@@ -19,17 +21,24 @@ export const Wrapper = styled.section`
     cursor: pointer;
     transform: translateY(-2px);
   }
-  ${props => props.secondary && css`
-    background-color:sand;
-  ` }
 `;
 
+const Pstyled = styled.p`
+  color: ${c.fontColor2};
+`
 
 export class Card extends Component {
   render() {
     return (
       <Wrapper secondary>
-        <h1>{this.props.name}</h1>
+        <h3>{this.props.name}</h3>
+        <hr/>
+        <Pstyled>A fair-market offer</Pstyled>
+        <Pstyled>No Showings</Pstyled>
+        <Pstyled>No double mortgage</Pstyled>
+        <Pstyled>Flexible close date</Pstyled>
+        <Pstyled>Zero days on market</Pstyled>
+        <Pstyled>No doing repairs yourself</Pstyled>
       </Wrapper>
     );
   }

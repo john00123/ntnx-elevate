@@ -1,29 +1,24 @@
 import React, { Component } from 'react';
+import './App.css';
 import styled, {css} from 'styled-components';
-import Nutanix from '../img/Nutanix.svg'
-import user from '../img/user.png'
+import Nutanix from './Nutanix.svg'
+import user from './user.png'
 
 const HeaderWrapper = styled.div`
   display: flex;
-  background-color:white;
+  background-color:red;
   padding: 0 20px;
   justify-content: space-between;
   height: 50px;
   align-items: center;
   flex-direction: row;
-
-  ${'' /* @media screen and (orientation: landscape) {
-    padding-left: env(safe-area-inset-left);
-    padding-right: env(safe-area-inset-right);
-  } */}
-
 `
 
 const User = styled.img`
   height: 30px;
 `
 
-const Left = styled.div`
+const Left =styled.div`
   display: flex;
   align-items: center;
   flex-direction: row;
@@ -34,7 +29,7 @@ const Left = styled.div`
   }
 `
 
-const Right = styled.div`
+const Right =styled.div`
   display: flex;
   align-items: center;
   flex-direction: row;
