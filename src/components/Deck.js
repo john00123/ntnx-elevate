@@ -12,4 +12,8 @@ export const Deck = styled.section`
 
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   grid-gap:20px;
+
+  @media (max-width: 600px) {
+    padding: 30px 0 100px 0;
+  }
 `;
