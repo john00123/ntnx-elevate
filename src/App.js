@@ -1,13 +1,16 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
-import HeaderPortal from './Header.js'
-import {Card} from './Card.js'
-import {SideBar} from './Sidebar.js'
-import {PageLayout}from './PageLayout.js'
-import {Deck}from './Deck.js'
+import logo from './img/logo.svg';
+import './css/App.css';
+import HeaderPortal from './components/Header.js'
+import {Card} from './components/Card.js'
+import {SideBar} from './components/Sidebar.js'
+import {PageLayout}from './components/PageLayout.js'
+import {Deck}from './components/Deck.js'
+import Footer from './components/Footer.js'
+
 
 class App extends Component {
+
   render() {
     return (
       <div>
@@ -15,12 +18,13 @@ class App extends Component {
         <PageLayout>
           <SideBar/>
           <Deck>
-            <Card secondary/>
-            <Card/>
-            <Card secondary/>
-            <Card/>
+            <Card name='this.state.name'/>
+            <Card name='Vanjie'/>
+            <Card name='Vanjie'/>
+            <Card name='Vanjie'/>
           </Deck>
         </PageLayout>
+        <Footer/>
 
       </div>
     );
