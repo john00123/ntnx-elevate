@@ -10,6 +10,7 @@ import Footer from './components/Footer.js'
 
 class App extends Component {
 
+
   render() {
     return (
       <div>
@@ -17,9 +18,9 @@ class App extends Component {
         <PageLayout>
           <SideBar/>
           <Deck>
-            <Card name='this.state.name'/>
-            <Card name='Vanjie'/>
-            <Card name='Vanjie'/>
+            <Card name='Build' />
+            <Card name='Learn'/>
+            <Card name='Market'/>
             <Card name='Vanjie'/>
           </Deck>
         </PageLayout>

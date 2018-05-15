@@ -5,10 +5,9 @@ import * as c from './Colors.js';
 // Create a Wrapper component that'll render a <section> tag with some styles
 
 const Wrapper = styled.section`
-  padding: 4em;
   background: white;
   border-radius: 4px;
-  height:100px; 
+  height:auto;
   display: flex;
   flex-direction: column;
   transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
@@ -23,14 +22,26 @@ const Wrapper = styled.section`
   }
 `;
 
+const Padding = styled.div`
+  padding:30px;
+`
+
 const Pstyled = styled.p`
   color: ${c.fontColor2};
 `
+const Img= styled.img`
+  height:200px;
+`
+
 
 export class Card extends Component {
   render() {
     return (
-      <Wrapper secondary>
+      <Wrapper>
+        
+        <Padding>
+          <h3>{this.props.name}</h3>
+        </Padding>
       {
         // <h3>{this.props.name}</h3>
         // <hr/>

@@ -19,7 +19,7 @@ const FooterWrapper = styled.div`
   width: 100%;
   overflow: none;
   justify-content: space-between;
-  height: 50px;
+  height: 80px;
   transform: translateY(80px);
   align-items: center;
   flex-direction: row;
@@ -39,11 +39,31 @@ export default class Footer extends Component {
   render() {
     return (
       <FooterWrapper>
-        <MenuItem vertical> <Img vertical  large src={Home}/>        </MenuItem>
-        <MenuItem vertical> <Img vertical  large src={Learn}/>    </MenuItem>
-        <MenuItem vertical> <Img vertical  large src={Tool}/>      </MenuItem>
-        <MenuItem vertical> <Img vertical large  src={Store}/>    </MenuItem>
-        <MenuItem vertical> <Img vertical large  src={Company}/> </MenuItem>
+        <MenuItem vertical>
+          <Img vertical src={Home}/>
+          <h3> Home</h3>
+        </MenuItem>
+
+        <MenuItem vertical>
+          <Img vertical  src={Learn}/>
+          <h3> Learn</h3>
+        </MenuItem>
+
+        <MenuItem vertical>
+          <Img vertical  src={Tool}/>
+          <h3> Tool</h3>
+        </MenuItem>
+
+        <MenuItem vertical>
+          <Img vertical  src={Store}/>
+          <h3> Store</h3>
+        </MenuItem>
+
+        <MenuItem vertical>
+          <Img vertical  src={Company}/>
+          <h3> Company</h3>
+        </MenuItem>
+
       </FooterWrapper>
     );
   }
