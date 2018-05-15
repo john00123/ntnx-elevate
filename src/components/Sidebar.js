@@ -43,6 +43,13 @@ export const Img = styled.img`
     margin-right: 0;
     margin-bottom: 10px;
   `}
+  ${props => props.large && css`
+    margin-right: 0;
+    margin-bottom: 0;
+    height:16px;
+    width:16px;
+  `}
+
 `
 
 export const MenuItem = styled.div`
@@ -55,7 +62,7 @@ export const MenuItem = styled.div`
     flex-direction: column;
     justify-content: center;
     margin-bottom: 0;
-    padding:20px;
+
   `}
 
   &:hover{
