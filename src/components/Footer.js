@@ -1,11 +1,7 @@
 import React, { Component } from 'react';
 import styled, {css} from 'styled-components';
 import * as c from './Colors.js'
-import Home from '../img/Icon/Home.svg'
-import Learn from '../img/Icon/Learn.svg'
-import Store from '../img/Icon/Store.svg'
-import Tool from '../img/Icon/Tool.svg'
-import Company from '../img/Icon/Company.svg'
+import * as i from '../img/Icon/Icons.js'
 import {MenuItem, Img} from './Sidebar.js'
 
 const FooterWrapper = styled.div`
@@ -40,28 +36,28 @@ export default class Footer extends Component {
     return (
       <FooterWrapper>
         <MenuItem vertical>
-          <Img vertical src={Home}/>
-          <h3> Home</h3>
+          <i.IconHome/>
+          <h3>Home</h3>
         </MenuItem>
 
         <MenuItem vertical>
-          <Img vertical  src={Learn}/>
-          <h3> Learn</h3>
+          <i.IconLearn/>
+          <h3>Learn</h3>
         </MenuItem>
 
         <MenuItem vertical>
-          <Img vertical  src={Tool}/>
-          <h3> Tool</h3>
+          <i.IconBuild/>
+          <h3>Build</h3>
         </MenuItem>
 
         <MenuItem vertical>
-          <Img vertical  src={Store}/>
-          <h3> Store</h3>
+          <i.IconMarket/>
+          <h3>Market</h3>
         </MenuItem>
 
         <MenuItem vertical>
-          <Img vertical  src={Company}/>
-          <h3> Company</h3>
+          <i.IconCompany/>
+          <h3>Company</h3>
         </MenuItem>
 
       </FooterWrapper>

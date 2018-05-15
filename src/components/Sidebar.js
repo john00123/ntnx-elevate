@@ -1,11 +1,7 @@
 import React, { Component } from 'react';
 import styled, {css} from 'styled-components';
 import * as c from './Colors.js'
-import Home from '../img/Icon/Home.svg'
-import Learn from '../img/Icon/Learn.svg'
-import Store from '../img/Icon/Store.svg'
-import Tool from '../img/Icon/Tool.svg'
-import Company from '../img/Icon/Company.svg'
+import * as i from '../img/Icon/Icons.js'
 
 const SideBarWrapper = styled.div`
   height: 100%;
@@ -57,18 +53,49 @@ export const MenuItem = styled.div`
   align-items: center;
   justify-content: flex-start;
   margin-bottom: 15px;
+  position: relative;
+  svg{
+    fill:${c.fontColor2};
+    margin-right:12px;
+  }
+  &:hover{
+    color:${c.fontColor1};
+    cursor:pointer;
+    svg { fill:${c.fontColor1};}
+  }
 
   ${props => props.vertical && css`
     flex-direction: column;
     justify-content: center;
-    margin-bottom: 0;
-
+    margin-bottom:0;
+    color: ${c.borderColor1};
+    &:hover{
+      color:white;
+      svg{fill:white}
+    }
+    svg{
+      width:16px;
+      height:16px;
+      fill:${c.borderColor1}
+      margin-right:0;
+      margin-bottom:15px
+    }
   `}
 
-  &:hover{
-    color:${c.blue1};
-    cursor:pointer;
-  }
+  ${props => props.badge && css `
+    &::after{
+      content:'';
+      height: 4px;
+      width: 4px;
+      position: absolute;
+      left: 10px;
+      top: 0;
+      border-radius:4px;
+      background-color:${c.red1};
+    }
+    `}
+
+
 `
 
 
@@ -76,12 +103,33 @@ export class SideBar extends Component {
   render() {
     return (
       <SideBarWrapper>
-        <MenuItem><Img src={Home}/>  <h3>Home</h3></MenuItem>
-        <MenuItem><Img src={Learn}/> <h3>Learn</h3></MenuItem>
-        <MenuItem><Img src={Tool}/>  <h3>Build</h3></MenuItem>
-        <MenuItem><Img src={Store}/> <h3>Market</h3></MenuItem>
+
+        <MenuItem badge>
+          <i.IconHome/>
+          <h3>Home</h3>
+        </MenuItem>
+
+        <MenuItem>
+          <i.IconLearn/>
+          <h3>Learn</h3>
+        </MenuItem>
+
+        <MenuItem>
+          <i.IconBuild/>
+          <h3>Build</h3>
+        </MenuItem>
+
+        <MenuItem>
+          <i.IconMarket/>
+          <h3>Market</h3>
+        </MenuItem>
+
         <Hr secondary/><br/>
-        <MenuItem><Img src={Company}/><h3>Company</h3></MenuItem>
+        <MenuItem>
+          <i.IconCompany/>
+          <h3>Company</h3>
+        </MenuItem>
+
       </SideBarWrapper>
     );
   }
