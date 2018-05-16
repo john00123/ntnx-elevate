@@ -6,8 +6,8 @@ import * as i from '../img/Icon/Icons.js'
 const SideBarWrapper = styled.div`
   height: 100%;
   min-height: calc(100vh - 50px);
-  width: 200px;
-  padding: 30px;
+  width: 150px;
+  padding: 30px 20px;
   box-sizing: border-box;
   color:${c.fontColor2};
   transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
@@ -27,41 +27,29 @@ const Hr = styled.hr`
   ${props => props.secondary && css`
     width:10px;
     margin-left:0;
+    margin-top:25px;
   `}
 `
 
-export const Img = styled.img`
-  display: inline-block;
-  height: 12px;
-  width: 12px;
-  margin-right: 15px;
-  ${props => props.vertical && css`
-    margin-right: 0;
-    margin-bottom: 10px;
-  `}
-  ${props => props.large && css`
-    margin-right: 0;
-    margin-bottom: 0;
-    height:16px;
-    width:16px;
-  `}
-
-`
 
 export const MenuItem = styled.div`
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  margin-bottom: 15px;
+  margin-bottom: 2px;
   position: relative;
+  border-radius: 3px;
+  padding: 8px 10px;
   svg{
     fill:${c.fontColor2};
-    margin-right:12px;
+    margin-right:15px;
   }
   &:hover{
     color:${c.fontColor1};
     cursor:pointer;
-    svg { fill:${c.fontColor1};}
+    svg { fill:${c.fontColor1}}
+    background-color: rgba(0,0,0,0.04);
+
   }
 
   ${props => props.vertical && css`
@@ -88,8 +76,8 @@ export const MenuItem = styled.div`
       height: 4px;
       width: 4px;
       position: absolute;
-      left: 10px;
-      top: 0;
+      left: 20px;
+      top: 8px;;
       border-radius:4px;
       background-color:${c.red1};
     }

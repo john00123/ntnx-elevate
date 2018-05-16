@@ -5,7 +5,7 @@ import styled, {css} from 'styled-components';
 
 export const Deck = styled.section`
   width: 100%;
-  padding: 30px 20px;
+  padding: 30px 30px;
 
   display: grid;
   align-items: center;
@@ -14,6 +14,6 @@ export const Deck = styled.section`
   grid-gap:20px;
 
   @media (max-width: 600px) {
-    padding: 30px 20px 100px 20px;
+    padding: 30px 30px 100px 30px;
   }
 `;
