@@ -29,18 +29,15 @@ const Padding = styled.div`
 const Pstyled = styled.p`
   color: ${c.fontColor2};
 `
-const Img= styled.img`
-  height:200px;
-`
-
 
 export class Card extends Component {
   render() {
     return (
       <Wrapper>
-        
+
         <Padding>
           <h3>{this.props.name}</h3>
+          <button className='primary'> Start Validation </button> 
         </Padding>
       {
         // <h3>{this.props.name}</h3>

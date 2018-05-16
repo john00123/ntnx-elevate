@@ -52,7 +52,7 @@ const Right = styled.div`
 const Hamburger = styled.span`
   width: 16px;
   position: relative;
-  margin-right: 20px;
+  margin-right: 30px;
   height: 24px;
   &::before, &:after{
     content: '';
