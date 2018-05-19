@@ -20,7 +20,7 @@ const SideBarWrapper = styled.div`
 `
 
 //Styling for the horizontal ruler
-const Hr = styled.hr`
+export const Hr = styled.hr`
   border: none;
   height: 1px;
   background-color: ${c.borderColor2};

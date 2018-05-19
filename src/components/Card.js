@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import styled, {css} from 'styled-components';
 import * as c from './Colors.js';
+import {Hr}from './Sidebar.js';
 
 // Create a Wrapper component that'll render a <section> tag with some styles
 
@@ -9,7 +10,7 @@ const Wrapper = styled.section`
   border-radius: 4px;
   height:auto;
   display: flex;
-  flex-direction: column;
+  justify-content:space-between;
   transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
   box-shadow:
     0 9px 9px 0 rgba(0,0,0,0.02),
@@ -24,20 +25,55 @@ const Wrapper = styled.section`
 
 const Padding = styled.div`
   padding:30px;
+  width:100%;
+  > * {
+    margin-bottom:10px;
+`
+
+const Flexbox = styled.div`
+  display:flex;
+  justify-content: space-between;
+  ${props => props.column && css`
+    flex-direction: column;
+    justify-items: flex-start;
+  `}
 `
 
 const Pstyled = styled.p`
   color: ${c.fontColor2};
 `
+const Img= styled.img`
+  height:200px;
+  width:200px;
+  background-color:${c.blue3};
+  border:none;
+  border-radius: 0 4px 4px 0;
+`
+
 
 export class Card extends Component {
   render() {
     return (
       <Wrapper>
-
         <Padding>
           <h3>{this.props.name}</h3>
-          <button className='primary'> Start Validation </button> 
+          <Hr/>
+          <Flexbox>
+            <p>This is something</p>
+            <p>AHV</p>
+          </Flexbox>
+          <Flexbox>
+            <p>This is something</p>
+            <p>AHV</p>
+          </Flexbox>
+          <Flexbox>
+            <p>This is something</p>
+            <p>AHV</p>
+          </Flexbox>
+          <Flexbox>
+            <p>This is something</p>
+            <p>AHV</p>
+          </Flexbox>
         </Padding>
       {
         // <h3>{this.props.name}</h3>
